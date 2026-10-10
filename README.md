@@ -229,9 +229,15 @@ Luego de registrados estos tres viajes:
 ¿Da igual que las colecciones de flotas y viajes en la sucursal sean listas o conjuntos? Si piensas que no, cambia una implementación
 por la otra y revisa el resultado.
 
+  RTA:No da igual para el caso del conjunto de flotas, ya que no deberia de aparecer mas de una vez un vehiculo. En cambio para el registro de viajes, si bien use un conjunto, se puede usar una lista debido a que podrian haber viajes similares.
+
 ¿Dónde se instancia un viaje, dentro o fuera de la clase Sucursal?. Pensar como sería la alternativa.
 
+  RTA: El viaje se instancia dentro de la sucursal. Una alternativa seria por fuera de la sucursal, en la terminal, instanciando un viaje y pasando por parametro a la sucursal.
+
 ¿La combi es un objeto autodefinido o una instancia de clase? ¿Se puede usar la otra variante indistintamente?
+
+  RTA: La combi es un objeto autodefinido ya que se establece que exista una unica combi adaptable para toda la empresa. No se puede usar una varante indistintamente, deberia necesitarse primero que la combi haga más de un viaje al mismo tiempo.
 
 Dibujar el diagrama dinámico que muestra el estado final del último test.
 
